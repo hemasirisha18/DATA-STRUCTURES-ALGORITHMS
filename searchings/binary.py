@@ -1,17 +1,18 @@
 def binarysearch(array,ele):
     l=0
     h=len(array)
-    matched=False
-    while l<=h and not matched:
+    middle=0
+    while l<=h:
         middle=(l+h)//2
         if array[middle]==ele:
-            matched = True
+            return middle
         else:
             if ele<array[middle]:
                 h=middle-1
             else:
                 l=middle+1
-    return matched
+    return -1
 
+# sample array is given it returns the index if element is present orelse returns -1
 array=[24,56,1,50,17]
 print(binarysearch(array,50))
