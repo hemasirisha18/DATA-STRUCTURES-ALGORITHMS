@@ -26,3 +26,4 @@ L1.create(40)
 L1.create(50)
 L1.print(10) # printing a linked list  using head value
 
+# it was sample creating the single linked list and printing data in the linked list 
